@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pureverse x Sonne Technology 戰略合作方案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9', // Medical Blue
+                        secondary: '#1e293b', // Slate 800
+                        accent: '#38bdf8', // Light Blue
+                        sonne: '#0055a4', // Sonne Technology specific blue tone
+                        background: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans HK"', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700&display=swap');
+        
+        body {
+            background-color: #f1f5f9;
+            scroll-behavior: smooth;
+        }
+        
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 2rem;
+            position: relative;
+            background: white;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+
+        .slide-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            background-image: radial-gradient(#0ea5e9 2px, transparent 2px);
+            background-size: 30px 30px;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #0055a4 0%, #0ea5e9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            font-size: 0.875rem;
+            color: #94a3b8;
+            font-weight: 500;
+        }
+        
+        .image-overlay {
+            background: linear-gradient(to right, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.4) 50%, transparent 100%);
+        }
+
+        /* Slide 2 AI Wave Animation */
+        .dark-wave-slide {
+            background: radial-gradient(120% 120% at 78% 18%, #14463E 0%, #0C2E29 48%, #081f1c 100%) !important;
+            color: white;
+        }
+        .ai-wave-container {
+            position: absolute; right: 6.5vw; top: 50%; transform: translateY(-50%);
+            display: flex; align-items: center; gap: 8px; height: 34vh; opacity: 0.9; z-index: 1;
+        }
+        .ai-wave-container i {
+            display: block; width: 7px; border-radius: 6px;
+            background: linear-gradient(180deg, #3ee0b5, #0F8E7A);
+            animation: ai-wave-eq 1.4s ease-in-out infinite;
+        }
+        @keyframes ai-wave-eq { 0%, 100% { height: 8%; } 50% { height: 100%; } }
+        .ai-wave-container i:nth-child(1) { animation-delay: 0s; }
+        .ai-wave-container i:nth-child(2) { animation-delay: 0.12s; }
+        .ai-wave-container i:nth-child(3) { animation-delay: 0.24s; }
+        .ai-wave-container i:nth-child(4) { animation-delay: 0.36s; }
+        .ai-wave-container i:nth-child(5) { animation-delay: 0.48s; }
+        .ai-wave-container i:nth-child(6) { animation-delay: 0.30s; }
+        .ai-wave-container i:nth-child(7) { animation-delay: 0.18s; }
+        .ai-wave-container i:nth-child(8) { animation-delay: 0.06s; }
+        .ai-wave-container i:nth-child(9) { animation-delay: 0.22s; }
+        .ai-wave-container i:nth-child(10) { animation-delay: 0.40s; }
+    </style>
+</head>
+<body class="antialiased text-slate-800 p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <!-- Slide 1: Title Slide -->
+        <div class="slide bg-slate-900 text-white overflow-hidden relative p-0 flex items-center justify-center text-center" id="slide-1">
+            <img src="assets/slide1_hk_hospital.png" alt="Futuristic hospital environment in Hong Kong with elderly patient" class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm z-0"></div>
+
+            <div class="slide-inner text-center z-10 relative p-8 flex flex-col items-center justify-center h-full">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
+                    Pureverse x Sonne Technology
+                </h1>
+                
+                <p class="text-2xl md:text-3xl text-white max-w-4xl mx-auto font-medium leading-relaxed drop-shadow-md">
+                    以廣東話 AI 語音賦能智慧醫療方案<br/>
+                    引領 <span class="text-accent font-bold">Smart Hospital 2.0</span> 升級
+                </p>
+            </div>
+            <div class="slide-number text-slate-300 drop-shadow">01</div>
+        </div>
+
+        <!-- Slide 2: About Pureverse -->
+        <div class="slide dark-wave-slide" id="slide-2">
+            
+            <div class="ai-wave-container" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+
+            <div class="slide-inner relative z-10">
+                <div class="mb-10 border-l-4 border-[#3ee0b5] pl-6 w-full md:w-7/12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">關於 Pureverse (公司簡介)</h2>
+                    <p class="text-xl text-[#7fe6cf]">賦予 AI 醫療設備「人性溫度」</p>
+                </div>
+
+                <div class="space-y-6 w-full md:w-7/12">
+                    <div class="glass-card p-6 rounded-xl border-l-4 border-l-[#3ee0b5] !bg-white/10 !border-white/20 backdrop-blur-md">
+                        <h3 class="text-xl font-bold text-white mb-3 flex items-center">
+                            <i class="fa-solid fa-bullseye text-[#3ee0b5] mr-3"></i> 核心定位
+                        </h3>
+                        <p class="text-blue-50 leading-relaxed">
+                            專注於情緒支援與共情互動的 AI 語音智能平台，致力於為所有產業打造具備「人性溫度」的對話體驗。
+                        </p>
+                    </div>
+                    
+                    <div class="glass-card p-6 rounded-xl border-l-4 border-l-[#3ee0b5] !bg-white/10 !border-white/20 backdrop-blur-md">
+                        <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                            <i class="fa-solid fa-microchip text-[#3ee0b5] mr-3"></i> 技術壁壘
+                        </h3>
+                        <p class="text-blue-50 leading-relaxed">
+                            專精於<span class="font-bold text-[#3ee0b5]">本地化廣東話大語言模型 (LLM) 推理</span>與底層架構優化，能確保極低延遲的語音對話，提供媲美真人的溝通流暢度。
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-xl border-l-4 border-l-[#3ee0b5] !bg-white/10 !border-white/20 backdrop-blur-md">
+                        <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                            <i class="fa-solid fa-network-wired text-[#3ee0b5] mr-3"></i> 靈活部署
+                        </h3>
+                        <p class="text-blue-50 leading-relaxed">
+                            具備完善的雲端整合及 API 串接能力，並支援靈活的 Telephony Trunk (電話分機) 設置，可輕易對接醫院與機構現有的醫療通訊基建。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number text-white/50">02</div>
+        </div>
+
+        <!-- Slide 3: Why Partner -->
+        <div class="slide" id="slide-3">
+            <div class="bg-pattern"></div>
+            <div class="slide-inner">
+                <div class="mb-10 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">為什麼是 Pureverse x Sonne Technology？</h2>
+                    <p class="text-xl text-slate-500">合作契機與協同效應</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg text-center relative mt-8">
+                        <div class="w-20 h-20 bg-sonne text-white rounded-full flex items-center justify-center text-3xl absolute -top-10 left-1/2 -translate-x-1/2 shadow-lg border-4 border-white">
+                            <i class="fa-solid fa-hospital"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mt-10 mb-4 text-slate-800">強大市場基礎</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">
+                            Sonne Technology 為政府部門、醫院及安老院舍提供頂尖的 Smart Hospital Solutions 及過萬種醫療產品。
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg text-center relative mt-8 transform md:-translate-y-4 border-b-4 border-b-accent">
+                        <div class="w-20 h-20 bg-accent text-white rounded-full flex items-center justify-center text-3xl absolute -top-10 left-1/2 -translate-x-1/2 shadow-lg border-4 border-white">
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mt-10 mb-4 text-slate-800">完美互補</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">
+                            將 Pureverse 獨特的「廣東話共情語音 AI」無縫整合至 Sonne 的先進自動化設備中，徹底解決醫護人手短缺及長者面對冷冰冰機器時的數碼鴻溝。
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg text-center relative mt-8">
+                        <div class="w-20 h-20 bg-amber-500 text-white rounded-full flex items-center justify-center text-3xl absolute -top-10 left-1/2 -translate-x-1/2 shadow-lg border-4 border-white">
+                            <i class="fa-solid fa-file-contract"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mt-10 mb-4 text-slate-800">提升中標率</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">
+                            在醫管局 (HA) 或政府標書中加入<span class="font-bold text-amber-600">「長者友善語音導航」</span>，打造溫暖的無障礙體驗，成為眾多同質化方案中脫穎而出的絕對優勢。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number">03</div>
+        </div>
+
+        <!-- Slide 4: Use Case 1 -->
+        <div class="slide" id="slide-4">
+            <div class="bg-pattern"></div>
+            <div class="slide-inner">
+                <div class="flex justify-between items-end mb-10 border-b pb-4">
+                    <div class="border-l-4 border-blue-500 pl-6">
+                        <div class="inline-block bg-blue-50 text-blue-600 px-3 py-1 rounded text-sm font-bold w-max mb-3">合作場景一</div>
+                        <h2 class="text-3xl font-bold mb-1 text-slate-800">虛擬藥劑師：無障礙語音派藥機 (Voice-Assisted Dispensing Kiosk)</h2>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">結合 Sonne 產品</h4>
+                            <p class="text-lg font-medium text-slate-700"><i class="fa-solid fa-box-archive text-sonne mr-2"></i> Intelligent Closed-loop Medication Management System (24小時自動派藥系統)</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">操作情境</h4>
+                            <p class="text-slate-600 leading-relaxed">
+                                將 AI 語音完美整合至 Sonne 24 小時自動派藥系統。當長者走近時，AI 會以親切的廣東話 Step-by-step 引導。出藥時更會同步讀出精準的服藥指示。
+                            </p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="text-sm font-bold text-blue-800 uppercase tracking-wider mb-2">商業價值</h4>
+                            <p class="text-slate-700 font-medium">
+                                徹底擊破「長者數碼鴻溝」。極致的長者友善 (Elderly-friendly) 設計，將成為 Sonne Technology 日後競投醫管局 (HA) 標書時，力壓對手的<span class="font-bold text-blue-600">「必殺技 (Winning Factor)」</span>。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg border-4 border-white md:order-last">
+                        <img src="assets/slide4_hk_elderly.png" alt="Elderly Hong Kong woman using smart dispensing kiosk" class="w-full h-auto object-cover" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                        
+                        <div class="absolute top-4 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur text-white px-4 py-2 rounded-full text-sm flex items-center border border-white/20">
+                            <div class="w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse"></div>
+                            AI 語音收音中...
+                        </div>
+                        
+                        <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur p-4 rounded-xl border border-white/50 shadow-lg text-left">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary"><i class="fa-solid fa-wave-square"></i></div>
+                                <span class="font-bold text-sm text-slate-700">Pureverse 虛擬藥劑師</span>
+                            </div>
+                            <p class="text-sm text-slate-600 italic">「婆婆，請將身份證放喺發光嗰個位... 啱啦，等緊啲藥出嚟...」</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number">04</div>
+        </div>
+
+        <!-- Slide 5: Use Case 2 -->
+        <div class="slide" id="slide-5">
+            <div class="bg-pattern"></div>
+            <div class="slide-inner">
+                <div class="flex justify-between items-end mb-10 border-b pb-4">
+                    <div class="border-l-4 border-emerald-500 pl-6">
+                        <div class="inline-block bg-emerald-50 text-emerald-600 px-3 py-1 rounded text-sm font-bold w-max mb-3">合作場景二</div>
+                        <h2 class="text-3xl font-bold mb-1 text-slate-800">藥劑師專屬 AI 助理 (Hands-free Pharmacy Operations)</h2>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg border-4 border-white">
+                        <img src="assets/slide5_hk_pharmacist_v2.png" alt="Pharmacist speaking to delivery robot" class="w-full h-auto object-cover" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                        
+                        <div class="absolute bottom-4 left-4 right-4 bg-emerald-900/90 backdrop-blur text-white p-4 rounded-xl border border-emerald-500/50 shadow-lg text-left">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <div class="w-8 h-8 rounded-full bg-emerald-500/30 flex items-center justify-center text-emerald-300"><i class="fa-solid fa-microphone"></i></div>
+                                <span class="font-bold text-sm">免提指令 (Hands-Free)</span>
+                            </div>
+                            <p class="text-sm italic text-emerald-50">「Check 下 Panadol 仲有幾多箱存貨... 幫我 Print 3 號床病人嘅藥單。」</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">結合 Sonne 產品</h4>
+                            <p class="text-lg font-medium text-slate-700"><i class="fa-solid fa-network-wired text-emerald-600 mr-2"></i> 智慧醫院與藥房自動化系統</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">操作情境</h4>
+                            <p class="text-slate-600 leading-relaxed">
+                                藥房職員及藥劑師只需配戴藍牙耳機，即可透過語音直接向 AI 下達指令，例如查詢存貨或列印藥單，系統即時處理。
+                            </p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-emerald-50 to-teal-50 p-5 rounded-xl border border-emerald-100">
+                            <h4 class="text-sm font-bold text-emerald-800 uppercase tracking-wider mb-2">商業價值</h4>
+                            <p class="text-slate-700 font-medium">
+                                實現 100% 免提 (Hands-free) 操作。除了大幅加快執藥及核對流程，更有效減少醫護人員觸碰螢幕及鍵盤的次數，<span class="font-bold text-emerald-600">極大化提升醫院內部的感染控制 (Infection Control) 標準。</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number">05</div>
+        </div>
+
+        <!-- Slide 6: Use Case 3 -->
+        <div class="slide" id="slide-6">
+            <div class="bg-pattern"></div>
+            <div class="slide-inner">
+                <div class="flex justify-between items-end mb-10 border-b pb-4">
+                    <div class="border-l-4 border-rose-500 pl-6">
+                        <div class="inline-block bg-rose-50 text-rose-600 px-3 py-1 rounded text-sm font-bold w-max mb-3">合作場景三</div>
+                        <h2 class="text-3xl font-bold mb-1 text-slate-800">智能病床專屬「AI 心靈陪伴」(Smart Bed Virtual Companion)</h2>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">結合 Sonne 產品</h4>
+                            <p class="text-lg font-medium text-slate-700"><i class="fa-solid fa-bed-pulse text-rose-500 mr-2"></i> Centrella Smart+ Bed 及 Patient Monitoring Systems (智能病床及監護系統)</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">操作情境 (Companionship Focus)</h4>
+                            <p class="text-slate-600 leading-relaxed">
+                                將 Pureverse 的「情感共鳴 (Empathy)」核心優勢直接注入智能病床。當病患在深夜感到孤單、焦慮或失眠時，系統不僅是一個冷冰冰的呼叫鈴，而是一位 <span class="font-bold text-rose-500">24 小時守候的「虛擬守護者」</span>。
+                            </p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-rose-50 to-pink-50 p-5 rounded-xl border border-rose-100">
+                            <h4 class="text-sm font-bold text-rose-800 uppercase tracking-wider mb-2">商業價值</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-slate-700 font-medium text-sm">
+                                <li><span class="font-bold text-rose-600">過濾非緊急呼叫 (Reduce Call Fatigue)：</span>很多時候病患不斷撳鐘呼叫護士，底層原因其實是焦慮不安。AI 的陪伴與安撫能大幅減少非緊急呼叫，真正釋放前線醫護的壓力。</li>
+                                <li><span class="font-bold text-rose-600">全人護理 (Holistic Care) 終極賣點：</span>在醫管局 (HA) 的標書評分中，「病患體驗 (Patient Experience)」與心理健康越來越被看重。為病床加入「心理陪伴」功能，是競爭對手（純硬體設備商）絕對無法複製的 Unique Selling Proposition (獨特賣點)。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg border-4 border-white md:order-last">
+                        <img src="assets/slide6_hk_companion_bed.png" alt="Patient getting emotional support from AI virtual companion in smart hospital bed at night" class="w-full h-auto object-cover" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                        
+                        <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur p-4 rounded-xl border border-white/50 shadow-lg text-left">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-rose-500"><i class="fa-solid fa-heart-pulse"></i></div>
+                                <span class="font-bold text-sm text-slate-700">情感共鳴 (Empathy) AI</span>
+                            </div>
+                            <p class="text-sm text-slate-600 italic">「婆婆，我好明白你而家嘅感受，做手術一定會緊張嘅... 不如我陪你傾下偈，或者引導你做幾下深呼吸，等你放鬆啲好冇？」</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number">06</div>
+        </div>
+
+        <!-- Slide 7: Use Case 4 -->
+        <div class="slide" id="slide-7">
+            <div class="bg-pattern"></div>
+            <div class="slide-inner">
+                <div class="flex justify-between items-end mb-10 border-b pb-4">
+                    <div class="border-l-4 border-purple-500 pl-6">
+                        <div class="inline-block bg-purple-50 text-purple-600 px-3 py-1 rounded text-sm font-bold w-max mb-3">合作場景四</div>
+                        <h2 class="text-3xl font-bold mb-1 text-slate-800">24/7 智能藥物諮詢熱線與主動式病患關懷</h2>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-start">
+                    <div class="space-y-6">
+                        <div class="relative rounded-2xl overflow-hidden shadow-lg border-4 border-white">
+                            <img src="assets/slide7_split_screen.png" alt="Split screen of pharmacy machine and elderly man getting reminder" class="w-full h-auto object-cover" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                            
+                            <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur p-4 rounded-xl border border-white/50 shadow-lg text-left">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600"><i class="fa-solid fa-phone-volume"></i></div>
+                                    <span class="font-bold text-sm text-slate-700">自動外撥提醒 + 24/7 諮詢解答</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Embedded workflow steps -->
+                        <div class="bg-white/90 backdrop-blur p-6 rounded-2xl shadow-lg border border-white/50">
+                            <div class="flex items-center justify-between mb-6 border-b border-slate-200 pb-4">
+                                <span class="font-bold text-purple-800">Sonne 智能閉環藥物管理系統</span>
+                                <i class="fa-solid fa-rotate text-purple-500"></i>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 border border-slate-200"><i class="fa-solid fa-box text-sm"></i></div>
+                                    <div>
+                                        <p class="text-sm font-bold text-slate-700">Step 1</p>
+                                        <p class="text-xs text-slate-500">藥物打包完成 (Packed)</p>
+                                    </div>
+                                </div>
+                                <div class="w-0.5 h-4 bg-slate-200 ml-5"></div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 border border-slate-200"><i class="fa-solid fa-truck-ramp-box text-sm"></i></div>
+                                    <div>
+                                        <p class="text-sm font-bold text-slate-700">Step 2</p>
+                                        <p class="text-xs text-slate-500">存入藥房自動化系統</p>
+                                    </div>
+                                </div>
+                                <div class="w-0.5 h-4 bg-purple-300 ml-5"></div>
+                                <div class="flex items-center space-x-4 bg-purple-50 p-3 rounded-xl border border-purple-200">
+                                    <div class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white animate-pulse shadow-[0_0_15px_rgba(168,85,247,0.4)]"><i class="fa-solid fa-phone-volume text-sm"></i></div>
+                                    <div>
+                                        <p class="text-sm font-bold text-purple-800">Step 3: Trigger AI</p>
+                                        <p class="text-xs text-purple-600">自動發起 Outbound Call</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">結合 Sonne 產品</h4>
+                            <p class="text-lg font-medium text-slate-700"><i class="fa-solid fa-pills text-purple-500 mr-2"></i> Blister Cutter & Unitizer, The VandenBrink Blister Machine (VBM) 及醫院通訊系統</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">操作情境</h4>
+                            <ul class="space-y-3 text-slate-600 leading-relaxed">
+                                <li><span class="font-bold text-purple-700">自動通知：</span>自動化機器完成排板包裝後，AI 系統即時觸發 Outbound Call：「陳生，你好！我係醫院打嚟嘅 AI 助手。你啲藥已經放咗喺地下嘅自動派藥機啦，你可以隨時去攞。記得帶身份證呀！」</li>
+                                <li><span class="font-bold text-purple-700">服藥跟進：</span>主動致電跟進病患服藥進度，確認是否有按時食藥及了解副作用，並記錄至系統。</li>
+                                <li><span class="font-bold text-purple-700">諮詢熱線：</span>病患隨時致電熱線，身份認證後 AI 從 Database 讀取專屬處方解答：「你隻血壓藥要每日食一次，記得飯後食啊。」</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-purple-50 to-fuchsia-50 p-5 rounded-xl border border-purple-100">
+                            <h4 class="text-sm font-bold text-purple-800 uppercase tracking-wider mb-2">商業價值</h4>
+                            <p class="text-slate-700 font-medium text-sm leading-relaxed">
+                                減少未領藥資源浪費並展現<span class="font-bold text-purple-600">主動式醫療關懷 (Proactive Care)</span>；同時大幅攔截及分流日常重複性的查詢電話，即時減輕前線藥房員工的沉重壓力。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number">07</div>
+        </div>
+
+        <!-- Slide 8: Tech & Security -->
+        <div class="slide" id="slide-8">
+            <div class="bg-pattern"></div>
+            <div class="slide-inner">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">技術架構與資訊安全</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center hover:shadow-xl transition-all">
+                        <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 text-slate-800">極速延遲優化</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            專注於 LLM 推理架構優化，確保語音對話延遲極低。消除了傳統語音系統的停頓感，做到媲美真人的即時流暢溝通。
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center hover:shadow-xl transition-all">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-6 shadow-md border border-green-200">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 text-slate-800">醫療數據隱私保障</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            支持 Local Inference 及封閉式 Vector DB (RAG)，提供企業級本地化部署 (On-Premise) 或私有雲方案，確保醫管局及病患的敏感醫療數據不出境，100% 符合香港醫療合規及私隱要求。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center hover:shadow-xl transition-all">
+                        <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
+                            <i class="fa-solid fa-plug"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 text-slate-800">無縫技術整合能力</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Pureverse 提供企業級的整合套件 (SDK/API)，結合 Tone of Voice Analysis，不改變 Sonne Technology 原有系統架構。
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center hover:shadow-xl transition-all">
+                        <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 text-slate-800">低成本高效能</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            精準控制 API 交易成本與計算資源，確保在全港醫院級的大規模部署時，仍具備極高的成本效益。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number">08</div>
+        </div>
+
+        <!-- Slide 9: Business Model -->
+        <div class="slide" id="slide-9">
+            <div class="bg-pattern"></div>
+            <div class="slide-inner">
+                <div class="mb-10 border-l-4 border-sonne pl-6">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">商業模式與共贏策略</h2>
+                    <p class="text-xl text-slate-500">將 AI 轉化為持續性增長動力</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-white p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row items-center md:items-start gap-6">
+                        <div class="flex-shrink-0 w-16 h-16 bg-sonne text-white rounded-2xl flex items-center justify-center text-2xl shadow-md">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">硬體授權 (Hardware Licensing)</h3>
+                            <p class="text-slate-600">將 AI 語音模組直接整合至 Sonne Technology 的自動派藥機及智能病床等硬件中，按設備收取一次性 Setup Fee 及年度軟體維護費 (Maintenance Fee)。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row items-center md:items-start gap-6">
+                        <div class="flex-shrink-0 w-16 h-16 bg-indigo-500 text-white rounded-2xl flex items-center justify-center text-2xl shadow-md">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">SaaS 訂閱模式 (SaaS Subscription)</h3>
+                            <p class="text-slate-600">針對用藥 Q&A 熱線及自動打出提示，按通話分鐘 (Pay-as-you-go) 或按月收取穩定服務費，為設備供應商創造經常性收入 (Recurring Revenue)。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 p-6 md:p-8 rounded-2xl border border-amber-200 shadow-sm flex flex-col md:flex-row items-center md:items-start gap-6">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 text-white rounded-2xl flex items-center justify-center text-3xl shadow-lg border border-orange-200">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">高增值升級 (Premium Upsell)</h3>
+                            <p class="text-slate-700 font-medium">向過往已經採購 Sonne Technology 醫療設備的現有客戶群推銷 Voice Agent 升級包 (Software Upgrade)，活化現有客戶，提升客戶生命週期價值 (LTV)。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number">09</div>
+        </div>
+
+        <!-- Slide 10: Meet the Team -->
+        <div class="slide" id="slide-10">
+            <div class="bg-pattern"></div>
+            <div class="slide-inner">
+                <div class="mb-10 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">Meet the Team</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- 1 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-16 h-16 rounded-full bg-slate-100 mx-auto mb-3 flex items-center justify-center text-slate-400 text-2xl border-2 border-primary/20"><i class="fa-solid fa-user-tie"></i></div>
+                        <h3 class="font-bold text-slate-800 text-sm">Lina Chong</h3>
+                        <p class="text-xs text-primary font-medium mt-1">Founder & Chairman</p>
+                    </div>
+                    <!-- 2 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-16 h-16 rounded-full bg-slate-100 mx-auto mb-3 flex items-center justify-center text-slate-400 text-2xl border-2 border-primary/20"><i class="fa-solid fa-microchip"></i></div>
+                        <h3 class="font-bold text-slate-800 text-sm">Steven Zhou</h3>
+                        <p class="text-xs text-primary font-medium mt-1">Technology Expert</p>
+                    </div>
+                    <!-- 3 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-16 h-16 rounded-full bg-slate-100 mx-auto mb-3 flex items-center justify-center text-slate-400 text-2xl border-2 border-primary/20"><i class="fa-solid fa-handshake"></i></div>
+                        <h3 class="font-bold text-slate-800 text-sm">Y Chiu</h3>
+                        <p class="text-xs text-primary font-medium mt-1">Business Development</p>
+                    </div>
+                    <!-- 4 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-16 h-16 rounded-full bg-slate-100 mx-auto mb-3 flex items-center justify-center text-slate-400 text-2xl border-2 border-primary/20"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3 class="font-bold text-slate-800 text-sm">David Gu Pengfei</h3>
+                        <p class="text-xs text-primary font-medium mt-1">AI Architect</p>
+                    </div>
+                    <!-- 5 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-16 h-16 rounded-full bg-slate-100 mx-auto mb-3 flex items-center justify-center text-slate-400 text-2xl border-2 border-primary/20"><i class="fa-solid fa-language"></i></div>
+                        <h3 class="font-bold text-slate-800 text-sm">Shiyu Zhang</h3>
+                        <p class="text-xs text-primary font-medium mt-1">Linguist</p>
+                    </div>
+                    <!-- 6 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-16 h-16 rounded-full bg-slate-100 mx-auto mb-3 flex items-center justify-center text-slate-400 text-2xl border-2 border-primary/20"><i class="fa-solid fa-code"></i></div>
+                        <h3 class="font-bold text-slate-800 text-sm">Arkim Ai Tao</h3>
+                        <p class="text-xs text-primary font-medium mt-1">Chief Engineer</p>
+                    </div>
+                    <!-- 7 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-16 h-16 rounded-full bg-slate-100 mx-auto mb-3 flex items-center justify-center text-slate-400 text-2xl border-2 border-primary/20"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3 class="font-bold text-slate-800 text-sm">Gary Lam</h3>
+                        <p class="text-xs text-primary font-medium mt-1">CTO Advisor</p>
+                    </div>
+                    <!-- 8 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-16 h-16 rounded-full bg-slate-100 mx-auto mb-3 flex items-center justify-center text-slate-400 text-2xl border-2 border-primary/20"><i class="fa-solid fa-boxes-stacked"></i></div>
+                        <h3 class="font-bold text-slate-800 text-sm">Jessie Ma Jie</h3>
+                        <p class="text-xs text-primary font-medium mt-1">Product Manager</p>
+                    </div>
+                    <!-- 9 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-16 h-16 rounded-full bg-slate-100 mx-auto mb-3 flex items-center justify-center text-slate-400 text-2xl border-2 border-primary/20"><i class="fa-solid fa-user-doctor"></i></div>
+                        <h3 class="font-bold text-slate-800 text-sm">Paul Li</h3>
+                        <p class="text-xs text-primary font-medium mt-1">Counselling Advisor</p>
+                    </div>
+                    <!-- 10 (Partners) -->
+                    <div class="md:col-span-2 bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-center items-center shadow-sm hover:shadow-md transition">
+                        <h3 class="text-xl font-bold text-emerald-600 mb-4 tracking-wide">Our Partners & Collaborators</h3>
+                        <img src="assets/partners_logos.png" alt="Partners and Collaborators" class="w-full max-w-lg h-auto object-contain mix-blend-multiply" />
+                    </div>
+                    <!-- 11 (Jack) -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow-md transition flex flex-col justify-center">
+                        <div class="w-16 h-16 rounded-full bg-slate-100 mx-auto mb-3 flex items-center justify-center text-slate-400 text-2xl border-2 border-primary/20"><i class="fa-solid fa-box-open"></i></div>
+                        <h3 class="font-bold text-slate-800 text-sm">Jack Chong</h3>
+                        <p class="text-xs text-primary font-medium mt-1">Product Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number">10</div>
+        </div>
+
+        <!-- Slide 11: CTA -->
+        <div class="slide dark-wave-slide flex items-center justify-center text-center" id="slide-11">
+            
+            <div class="slide-inner relative z-10 flex flex-col items-center justify-center h-full">
+                <h2 class="text-4xl md:text-5xl font-bold text-white leading-relaxed italic drop-shadow-lg max-w-4xl">
+                    "Empowering the Future of Healthcare with Human Warmth."
+                </h2>
+            </div>
+            <div class="slide-number text-white/50">11</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
